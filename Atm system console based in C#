@@ -1,0 +1,206 @@
+using System;
+class program
+{
+    public static void Main()
+    {
+        int amount1 = 5000, amount2 = 7000, amount3 = 8000, deposit, withdraw;
+        int choice, choice1, pin =0;
+        bool isCondition = false;
+        for (int i = 0; i < 3; i++)
+        {
+            Console.WriteLine("Enter Your 4 Digit Pin ");
+            pin = int.Parse(Console.ReadLine());
+
+            if (pin == 1234)
+
+            {
+                Console.WriteLine("DANIAL SALEEM | 08407901180903\n");
+                Console.WriteLine("WELCOME TO HBL BANK ATM SERVICE\n");
+                do
+                {
+
+                    Console.WriteLine("1. Current Balance\n");
+                    Console.WriteLine("2. Withdraw \n");
+                    Console.WriteLine("3. Deposit \n");
+                    Console.WriteLine("4. Cancel \n");
+
+
+                    Console.WriteLine("Enter Your Choice : ");
+                    choice = int.Parse(Console.ReadLine());
+                    if (choice == 1)
+                    {
+
+                        Console.WriteLine("\n Your Current Balance is Rs : {0} ", amount1);
+                    }
+                    else
+                        if (choice == 2)
+                    {
+
+                        Console.WriteLine("\n Enter Withdrawal amount : ");
+                        withdraw = int.Parse(Console.ReadLine());
+
+                        amount1 = amount1 - withdraw;
+                        Console.WriteLine("\n\n Please Collect your cash");
+                        Console.WriteLine("\n Current balance is Rs : {0}", amount1);
+
+                    }
+                    if (choice == 3)
+                    {
+                        Console.WriteLine("\n Enter deposit amount");
+                        deposit = int.Parse(Console.ReadLine());
+                        amount1 = amount1 + deposit;
+                        Console.WriteLine("Your amount deposited succesfully...");
+                        Console.WriteLine("Your total balance is  Rs : {0}", amount1);
+                    }
+                    else if (choice == 4)
+                    {
+                        Console.WriteLine("\n THANK YOU…");
+
+                    }
+                    Console.WriteLine("Want to Proceed ?(yes:1/no:2) \n");
+                    choice1 = int.Parse(Console.ReadLine());
+                    if (choice1 == 1)
+                    {
+                        isCondition = true;
+                    }
+                    else
+                        if (choice1 == 2)
+                    {
+                        isCondition = false;
+                    }
+
+                } while (isCondition);
+                Console.WriteLine("\n\n Thanks for using HBL ATM Service");
+
+
+            }
+            else if (pin == 5678)
+            {
+
+                Console.WriteLine("UMAIR KALEEM | 0904387284927\n");
+                do
+                {
+
+                    Console.WriteLine("1. Current Balance\n");
+                    Console.WriteLine("2. Withdraw \n");
+                    Console.WriteLine("3. Deposit \n");
+                    Console.WriteLine("4. Cancel \n");
+
+
+                    Console.WriteLine("Enter Your Choice : ");
+                    choice = int.Parse(Console.ReadLine());
+                    if (choice == 1)
+                    {
+
+                        Console.WriteLine("\n Your Current Balance is Rs : {0} ", amount2);
+                    }
+                    else
+                        if (choice == 2)
+                    {
+
+                        Console.WriteLine("\n Enter Withdrawal amount : ");
+                        withdraw = int.Parse(Console.ReadLine());
+
+                        amount2 = amount2 - withdraw;
+                        Console.WriteLine("\n\n Please Collect your cash");
+                        Console.WriteLine("\n Current balance is Rs : {0}", amount2);
+
+                    }
+                    if (choice == 3)
+                    {
+                        Console.WriteLine("\n Enter deposit amount");
+                        deposit = int.Parse(Console.ReadLine());
+                        amount2 = amount2 + deposit;
+                        Console.WriteLine("Your amount deposited succesfully...");
+                        Console.WriteLine("Your total balance is  Rs : {0}", amount2);
+                    }
+                    else if (choice == 4)
+                    {
+                        Console.WriteLine("\n THANK YOU…");
+
+                    }
+                    Console.WriteLine("Want to Proceed ?(yes:1/no:2) \n");
+                    choice1 = int.Parse(Console.ReadLine());
+                    if (choice1 == 1)
+                    {
+                        isCondition = true;
+                    }
+                    else
+                       if (choice1 == 2)
+                    {
+                        isCondition = false;
+                    }
+
+
+                } while (isCondition);
+                Console.WriteLine("\n\n Thanks for using HBL ATM Service");
+            }
+            else if (pin == 9090)
+            {
+
+                Console.WriteLine("NOUMAN RANA | 05404387284765\n");
+                do
+                {
+
+                    Console.WriteLine("1. Current Balance\n");
+                    Console.WriteLine("2. Withdraw \n");
+                    Console.WriteLine("3. Deposit \n");
+                    Console.WriteLine("4. Cancel \n");
+
+
+                    Console.WriteLine("Enter Your Choice : ");
+                    choice = int.Parse(Console.ReadLine());
+                    if (choice == 1)
+                    {
+
+                        Console.WriteLine("\n Your Current Balance is Rs : {0} ", amount3);
+                    }
+                    else
+                        if (choice == 2)
+                    {
+
+                        Console.WriteLine("\n Enter Withdrawal amount : ");
+                        withdraw = int.Parse(Console.ReadLine());
+
+                        amount3 = amount3 - withdraw;
+                        Console.WriteLine("\n\n Please Collect your cash");
+                        Console.WriteLine("\n Current balance is Rs : {0}", amount3);
+
+                    }
+                    if (choice == 3)
+                    {
+                        Console.WriteLine("\n Enter deposit amount");
+                        deposit = int.Parse(Console.ReadLine());
+                        amount3 = amount3 + deposit;
+                        Console.WriteLine("Your amount deposited succesfully...");
+                        Console.WriteLine("Your total balance is  Rs : {0}", amount3);
+                    }
+                    else if (choice == 4)
+                    {
+                        Console.WriteLine("\n THANK YOU…");
+
+                    }
+                    Console.WriteLine("Want to Proceed ?(yes:1/no:2) \n");
+                    choice1 = int.Parse(Console.ReadLine());
+                    if (choice1 == 1)
+                    {
+                        isCondition = true;
+                    }
+                    else
+                        if (choice1 == 2)
+                    {
+                        isCondition = false;
+                    }
+
+                } while (isCondition);
+                Console.WriteLine("\n\n Thanks for using HBL ATM Service");
+            }
+
+        }
+        Console.WriteLine("Inavalid Pin,Your Account is Blocked!!!");
+       
+       
+        
+    }
+}
+
